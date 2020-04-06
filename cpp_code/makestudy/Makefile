@@ -1,6 +1,7 @@
 CC = g++
 TARGET = a.out
 
+
 all = $(TARGET)
 
 $(TARGET): main.o ve_class.o
