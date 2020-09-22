@@ -1,0 +1,2 @@
+cppViewBase
+-> cpp + qml connect
