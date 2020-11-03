@@ -44,12 +44,14 @@ BaseConnect::BaseConnect()
 
 ```
 /*QML Code(main.qml)*/
+
+import JangQml 1.0
+<...>
 BaseConnect {
     id: baseConnect
 }
 
-...
-...
+<...>
 
 Text {
         id: testText02
