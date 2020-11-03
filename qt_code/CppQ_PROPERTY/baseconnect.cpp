@@ -33,7 +33,7 @@ void BaseConnect::setQmlData( QString &qmlData ) {
     m_pCppData = qmlData;
 //    sendString = qmlData;
 
-    qDebug() << "1.setQmlData: " << m_pCppData << endl;
+    qDebug() << "1.setQmlData: " << m_pCppData;
 
     /*getQmlData Function Call*/
     emit qmlDataChanged();
