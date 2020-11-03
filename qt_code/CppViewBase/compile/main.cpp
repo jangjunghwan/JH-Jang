@@ -1,7 +1,7 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 
-#include "BaseView.h"
+#include "baseview.h"
 
 int main(int argc, char *argv[])
 {

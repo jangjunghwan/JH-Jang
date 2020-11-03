@@ -1,4 +1,4 @@
-#include "BaseView.h"
+#include "baseview.h"
 
 BaseView::BaseView( int &argc, char **argv )
     :QGuiApplication ( argc, argv )
@@ -6,6 +6,8 @@ BaseView::BaseView( int &argc, char **argv )
     m_BaseEngine = new QQmlApplicationEngine;
     m_BaseWindow = new QQuickWindow;
     m_BaseObject = new QObject;
+    m_pBaseConnect = new baseConnect;
+
 
     initBase();
 }

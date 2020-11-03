@@ -6,6 +6,8 @@
 #include <QQuickWindow>
 #include <QObject>
 
+#include "baseconnect.h"
+
 class BaseView: public QGuiApplication
 {
 public:
@@ -17,6 +19,7 @@ private:
     QQmlApplicationEngine *m_BaseEngine;
     QQuickWindow *m_BaseWindow;
     QObject *m_BaseObject;
+    baseConnect *m_pBaseConnect;
 };
 
 #endif // BASEVIEW_H
