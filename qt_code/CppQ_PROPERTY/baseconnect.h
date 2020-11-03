@@ -22,17 +22,21 @@ public:
     /*Base Connect Function*/
     Q_INVOKABLE void connectPrint( QString );
     Q_INVOKABLE void connectQmlData( QString );
+
     QString getQmlData();
     void setQmlData( QString & );
+
+    QString m_pCppData;
+    QString sendString;
 
 private:
     QQuickWindow *m_pMainView;
     QQuickView *m_pQQuickView;
 
-    QString m_pCppData;
-
 signals:
     void qmlDataChanged();
+
+public slots:
 
 };
 

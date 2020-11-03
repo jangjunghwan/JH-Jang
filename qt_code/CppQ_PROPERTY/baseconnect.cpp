@@ -14,20 +14,26 @@ void BaseConnect::setWindow( QQuickWindow *Window ) {
 }
 
 void BaseConnect::connectPrint( QString word ) {
-    qDebug() << word;
+    qDebug() << word << endl;
 }
 
 void BaseConnect::connectQmlData( QString qmlData ) {
     this->setQmlData( qmlData );
 }
 QString BaseConnect::getQmlData() {
-    qDebug() << "getQmlData: " << m_pCppData;
-    return this->m_pCppData;
+
+//    m_pCppData = "hello";
+//    m_pCppData = sendString;
+    qDebug() << "2.getQmlData: " << m_pCppData << endl;
+
+    return m_pCppData;
 }
 void BaseConnect::setQmlData( QString &qmlData ) {
-    qDebug() << "setQmlData_qmlData: " << qmlData;
-    this->m_pCppData = qmlData;
-    qDebug() << "setQmlData_m_pCppData: " << m_pCppData;
+
+    m_pCppData = qmlData;
+//    sendString = qmlData;
+
+    qDebug() << "1.setQmlData: " << m_pCppData << endl;
 
     /*getQmlData Function Call*/
     emit qmlDataChanged();

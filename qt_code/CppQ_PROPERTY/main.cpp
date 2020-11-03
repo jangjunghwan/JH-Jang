@@ -10,13 +10,14 @@ int main(int argc, char *argv[])
 
     QQmlApplicationEngine engine;
 
-    BaseConnect *baseEvent = new BaseConnect();
+//    BaseConnect *baseEvent = new BaseConnect();
+    BaseConnect baseEvent;
 
-    engine.rootContext()->setContextProperty( "JJH", baseEvent );
+    engine.rootContext()->setContextProperty( "JJH", &baseEvent );
     engine.load( QUrl( QStringLiteral( "qrc:/main.qml" )));
     QObject *root = engine.rootObjects()[0];
 
-    baseEvent->setWindow( qobject_cast< QQuickWindow * >( root ));
+    baseEvent.setWindow( qobject_cast< QQuickWindow * >( root ));
 
     if ( engine.rootObjects().isEmpty() ){
         return -1;

@@ -8,9 +8,9 @@ Window {
     height: 480
     title: qsTr("Hello World")
 
-    BaseConnect {
-        id: baseConnect
-    }
+//    BaseConnect {
+//        id: baseConnect
+//    }
 
     Text {
         id: testText
@@ -24,11 +24,12 @@ Window {
             anchors.fill: parent
 
             onClicked: {
-                baseConnect.connectPrint( "hi" )
-                baseConnect.connectQmlData( "Hello World" )
+//                baseConnect.connectPrint( "hi" )
+//                baseConnect.connectQmlData( "Hello World" )
+                JJH.connectQmlData( "Hello World" )
                 testText.text = JJH.getValue
             }
         }
-
     }
+
 }
