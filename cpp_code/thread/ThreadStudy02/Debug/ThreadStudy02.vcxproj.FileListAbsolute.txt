@@ -1,0 +1,2 @@
+D:\0.MyWork\gitWork\JH-Jang\cpp_code\thread\ThreadStudy02\Debug\ThreadStudy02.exe
+D:\0.MyWork\gitWork\JH-Jang\cpp_code\thread\ThreadStudy02\Debug\ThreadStudy02.pdb
