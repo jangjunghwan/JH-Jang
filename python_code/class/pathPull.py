@@ -139,32 +139,6 @@ class FileCtl(PathCtl):
 
 if __name__=='__main__':
 
-    oriPathName = "correct_answer_ok"
-    refPathName = "process_answer_ok"
-    ori_tmp = "oriTmp"
-    ref_tmp = "refTmp"
-
-    #/*
-    # * ori file work
-    # */
-    cPath = PathCtl(oriPathName)
-    cFolder = FolderCtl(oriPathName)
-    cFile = FileCtl(oriPathName)
-
-    extensionFileList = cPath.getFileExtension("txt")
-    cFolder.createFolder(ori_tmp)
-
-    oriKeyAndValue = cFile.fileRead("txt")
-    oriFileList = cFile.fileNameExtension
-
-    for i in range(len(oriFileList)):
-        oriValue = oriKeyAndValue[oriFileList[i]]
-        for j in range(len(oriValue)):
-            if (".wav" in oriValue[j]):
-                fileName = oriValue[j]
-                tmp = fileName.split(".")
-                fileName = tmp[0] + ".txt"
-                fileValue = oriValue[j+1]
-            cFile.fileWirte(ori_tmp, fileName, fileValue)
+    print("JJH")
 
     
